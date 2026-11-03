@@ -1,0 +1,496 @@
+
+
+<!DOCTYPE html>
+<html lang="zh" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新媒体运营作品集 - 张琦瑞</title>
+    <!-- 基础 SEO meta 标签 -->
+<meta name="description" content="短视频策划与剪辑、直播脚本与场控、平面视觉、活动执行——张琦瑞的作品集。深圳职业技术大学传播与策划专业在读，2027 年毕业。">
+<meta name="keywords" content="张琦瑞,新媒体运营,短视频策划,短视频剪辑,直播运营,直播场控,内容运营,游戏社区,作品集,深圳">
+<meta name="author" content="张琦瑞">
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+
+    <!-- 基础样式文件 -->
+    <link rel="stylesheet" href="/assets/pageforge.min.css">
+
+    <script>
+        (function () {
+            document.addEventListener('click', function (e) {
+                var link = e.target.closest('a');
+                if (!link) {
+                    return;
+                }
+
+                const href = link.getAttribute('href');
+                if (!href || href.startsWith('http') || href.startsWith('#')) {
+                    return;
+                }
+
+                e.preventDefault();
+
+                // 获取当前路径信息
+                const pathParts = window.location.pathname.split('/').filter(Boolean);
+                let version = null;
+                let lang = null;
+
+                // 解析当前 URL 中的版本和语言信息
+                if (pathParts.length > 0) {
+                    if (/^\d+\.\d+(\.\d+)?$/.test(pathParts[0]) || pathParts[0] === 'current') {
+                        version = pathParts[0];
+                        lang = pathParts[1];
+                    }
+                    else {
+                        lang = pathParts[0];
+                    }
+                }
+
+                // 构建 404 页面路径
+                let notFoundPath = '';
+                if (version) {
+                    notFoundPath += '/' + version;
+                }
+                if (lang) {
+                    notFoundPath += '/' + lang;
+                }
+                notFoundPath += '/404.html';
+
+                fetch(href)
+                    .then(response => {
+                        if (response.ok) {
+                            window.location.href = href;
+                        }
+                        else {
+                            window.location.href = notFoundPath;
+                        }
+                    })
+                    .catch(() => {
+                        window.location.href = notFoundPath;
+                    });
+            });
+        })();
+    </script>
+
+    <!-- 加载主题配置中的额外 CSS 文件 -->
+    
+        
+            <link rel="stylesheet" href="/assets/css/theme.css">
+        
+    
+
+    <style>
+        :root {
+            
+            --header-height: 64px; /* nav 64px */
+            
+        }
+    </style>
+
+    <!-- Tailwind CSS -->
+    <script src="/assets/js/tailwind-off.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                h1: { fontWeight: '700', fontSize: '1.875rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h2: { fontWeight: '700', fontSize: '1.5rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h3: { fontWeight: '700', fontSize: '1.25rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h4: { fontWeight: '700', fontSize: '1.125rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h5: { fontWeight: '700', fontSize: '1rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h6: { fontWeight: '700', fontSize: '0.875rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                            }
+                        }
+                    }
+                }
+            },
+            plugins: [
+                function({ addBase }) {
+                    addBase({
+                        'h1': { fontWeight: '700', fontSize: '1.875rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h2': { fontWeight: '700', fontSize: '1.5rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h3': { fontWeight: '700', fontSize: '1.25rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h4': { fontWeight: '700', fontSize: '1.125rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h5': { fontWeight: '700', fontSize: '1rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h6': { fontWeight: '700', fontSize: '0.875rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        '.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6': { color: 'rgb(255, 255, 255)' }
+                    })
+                }
+            ]
+        }
+    </script>
+
+    <!-- Prism.js 语法高亮样式 -->
+    <link href="/assets/css/third-party-off.css" rel="stylesheet"/>
+
+    <!-- 统计代码 -->
+    
+
+    <!-- Mermaid 图表 -->
+    
+
+    <!-- KaTeX 数学公式 -->
+    
+</head>
+
+<body class="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+<div class="flex flex-col min-h-screen">
+    
+
+    <!-- 移动端菜单按钮 -->
+    
+
+    <div class="pt-[--header-height] w-full">
+        <div class="container mx-auto px-4 py-4 md:py-8 flex-grow flex flex-col md:flex-row">
+            <!-- 左侧列表 -->
+            
+
+            <!-- 中间内容 -->
+            <main class="flex-grow w-full md:w-2">
+                <article class="prose dark:prose-invert lg:prose-lg mx-auto
+                          max-w-none md:max-w-2xl lg:max-w-full">
+                    <article>
+    <div class="content">
+        <div class="site">
+<script>document.documentElement.classList.add('js')</script>
+<script>
+/* 若站点被部署在子目录（如 /portfolio/），把 PageForge 注入的根路径资源改写成子目录路径 */
+(function () {
+  var parts = location.pathname.split('/').filter(Boolean);
+  if (!parts.length || parts[0] === 'assets' || /\.html?$/.test(parts[0])) return;
+  var prefix = '/' + parts[0];
+  function fix() {
+    ['href', 'src', 'poster'].forEach(function (attr) {
+      var els = document.querySelectorAll('[' + attr + '^="/assets"]');
+      for (var i = 0; i < els.length; i++) {
+        els[i].setAttribute(attr, prefix + els[i].getAttribute(attr));
+      }
+    });
+  }
+  fix();
+  document.addEventListener('DOMContentLoaded', fix);
+})();
+</script>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+<header class="topbar">
+<a class="brand" href="#top">张琦瑞<span>QIRUI · 2026</span></a>
+<nav class="nav" aria-label="页面导航"><a href="#about">关于</a><a href="#works">作品</a><a href="#live">直播</a><a href="#skills">能力</a><a href="#exp">经历</a><a href="#contact">联系</a></nav>
+<div class="status"><i aria-hidden="true"></i>可到岗</div>
+</header>
+<main id="top">
+<section class="hero">
+<p class="hero-side" aria-hidden="true">新媒体内容策划 · 深圳</p>
+<div class="hero-inner">
+<p class="hero-eyebrow">PORTFOLIO · 2026 · 深圳</p>
+<h1 class="hero-name"><span class="en">Qirui<em>.</em></span><span class="cn">张 琦 瑞</span></h1>
+<p class="hero-role">新媒体运营 <span>/</span> 短视频策划 · 剪辑 <span>/</span> 直播执行</p>
+<p class="hero-line">把想法做成<em>能上线的片子</em>，再用数据把效果讲清楚。</p>
+</div>
+<div class="hero-foot">
+<div class="hero-meta">
+<div><b>深圳</b><span>BASED IN SHENZHEN</span></div>
+<div><b>深圳职业技术大学</b><span>传播与策划 · 2024—2027</span></div>
+<div><b>直播电商（中级）</b><span>CERTIFICATE</span></div>
+</div>
+<a class="scroll-cue" href="#about">往下看<i aria-hidden="true"></i></a>
+</div>
+<div class="stats">
+<div class="stat"><b>4</b><span>支成片 · 从策划到剪辑</span></div>
+<div class="stat"><b>86.48</b><span>直播脚本 FABE 评分</span></div>
+<div class="stat"><b>3</b><span>套平面视觉产出</span></div>
+<div class="stat"><b>5</b><span>段实践与兼职经历</span></div>
+</div>
+</section>
+<section class="sec" id="about">
+<div class="wrap">
+<div class="sec-head rv"><span class="num">01</span><h2>关于我</h2><span class="en">About</span></div>
+<div class="about-grid">
+<div class="about-v">传播与策划 · 深圳职业技术大学</div>
+<div>
+<p class="about-lead rv">我是张琦瑞，深圳职业技术大学<strong>传播与策划</strong>专业在读。从校园宣传片到脱口秀节目策划，从宠物食品直播间的场控到跨境电商的多语言海报，我习惯把一件事<em>从念头做到上线</em>——写脚本、分镜、扛机器、剪片、复盘，一个人也能跑完整条链路。</p>
+<p class="about-lead rv">另一个身份是深度 FPS 玩家：无畏契约最高段位神话、多赛季双服超凡，三角洲行动 1000 小时以上。我做内容不是站在外面猜观众想看什么，而是<em>自己就是那个会为一条视频停留三秒的人</em>。</p>
+<dl class="facts rv">
+<div class="fact"><dt>求职意向</dt><dd>新媒体运营 / 短视频策划·剪辑 / 直播执行 / 游戏内容与社区运营</dd></div>
+<div class="fact"><dt>所在地</dt><dd>深圳（可到岗实习，也接受远程协作）</dd></div>
+<div class="fact"><dt>毕业时间</dt><dd>2027 年 6 月</dd></div>
+<div class="fact"><dt>证书</dt><dd>直播电商（中级）</dd></div>
+</dl>
+<div class="tags rv"><span>短视频策划</span><span>分镜脚本</span><span>剪映剪辑</span><span>文案撰写</span><span>平面排版</span><span>AI 提效</span><span>直播场控</span><span>FPS 玩家</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec" id="works">
+<div class="wrap">
+<div class="sec-head rv"><span class="num">02</span><h2>作品</h2><span class="en">Selected Works</span></div>
+<p class="sec-lead rv">四条片子、三套平面，场景从展馆到直播间、从宿舍到教室。每条下面都写了当时的任务、我的做法和复盘——点开「复盘笔记」能看到，那部分才是我真正想被看见的。</p>
+<div class="video-block">
+<div class="video-block-label">竖屏 · 展会与直播</div>
+<div class="video-grid portrait">
+<article class="vcard rv">
+<div class="media portrait">
+<img src="/assets/media/poster-fashionweek.jpg" alt="探展 vlog 里在展馆现场介绍展会" width="720" height="1280" loading="lazy">
+<button class="play" type="button" aria-label="播放：深圳原创时装展 · 探展 vlog"><i aria-hidden="true"></i></button>
+<video preload="none" playsinline controls src="/assets/media/fashionweek.mp4" poster="/assets/media/poster-fashionweek.jpg"></video>
+</div>
+<div class="vmeta">
+<div class="vtitle"><span class="idx">01</span><h3>深圳原创时装展 · 探展 vlog</h3></div>
+<div class="ven">Trade Show · Walk-through Vlog</div>
+<p>一个人逛完整个展，把「这块面料好在哪」讲成大白话。</p>
+<ul class="roles"><li>策划</li><li>拍摄</li><li>出镜</li><li>剪辑</li></ul>
+<details class="case"><summary>复盘笔记</summary>
+<dl>
+<dt>任务</dt><dd>展会现场内容：要在短视频里留住非专业观众，同时把面料的卖点说清楚，最后落成一条能发出去的探展片。</dd>
+<dt>做法</dt><dd>开场站在展馆门口直接报「今天这展会」，先把场景立住；中段用手部特写把「秒回弹、软、粘毛」这些抽象手感变成可看的动作；字幕一句一个卖点，负责整条片的节奏。</dd>
+<dt>复盘</dt><dd>现场环境音很杂，节奏几乎全靠字幕和口播撑。特写拍够了，但少一个「穿上身对比」的镜头——说服力还能再加一格。</dd>
+</dl>
+</details>
+</div>
+</article>
+<article class="vcard rv">
+<div class="media portrait">
+<img src="/assets/media/poster-livecut.jpg" alt="直播间里主播演示保温杯的画面" width="720" height="1280" loading="lazy">
+<button class="play" type="button" aria-label="播放：保温杯直播切片 · FABE"><i aria-hidden="true"></i></button>
+<video preload="none" playsinline controls src="/assets/media/livecut.mp4" poster="/assets/media/poster-livecut.jpg"></video>
+</div>
+<div class="vmeta">
+<div class="vtitle"><span class="idx">02</span><h3>保温杯直播切片 · FABE</h3></div>
+<div class="ven">Live Selling Cut · FABE Script</div>
+<p>一段能直接投流的带货切片：痛点开场，讲品、演示、促单一条走完。</p>
+<ul class="roles"><li>主播</li><li>脚本</li><li>剪辑</li></ul>
+<details class="case"><summary>复盘笔记</summary>
+<dl>
+<dt>任务</dt><dd>把 FABE 结构落到一段真实带货直播里，能完整看到「讲品—演示—逼单」的节奏，也能当面试样片。</dd>
+<dt>做法</dt><dd>三秒抛痛点；把容量、保温、材质翻译成使用场景（放包里、放办公室、通勤）；现场做倒水、拧盖的动作演示；最后用价格锚点和下单指令收尾。全程站着讲，靠身体动作保持画面活性。</dd>
+<dt>复盘</dt><dd>这条拿到 86.48 分（教师 94 / 生生互评 75.2）。回看发现节奏太满，真人直播间需要留白和即时回应弹幕——后来在宠物食品直播间做场控时，这点体会更深。</dd>
+</dl>
+</details>
+</div>
+</article>
+</div>
+</div>
+<div class="video-block">
+<div class="video-block-label">横屏 · 产品与品牌</div>
+<div class="video-grid landscape">
+<article class="vcard rv">
+<div class="media landscape">
+<img src="/assets/media/poster-lianhua.jpg" alt="宿舍剧情短片里人物戴着口罩的场景" width="1280" height="720" loading="lazy">
+<button class="play" type="button" aria-label="播放：莲花清瘟 · 剧情式植入"><i aria-hidden="true"></i></button>
+<video preload="none" playsinline controls src="/assets/media/lianhua.mp4" poster="/assets/media/poster-lianhua.jpg"></video>
+</div>
+<div class="vmeta">
+<div class="vtitle"><span class="idx">03</span><h3>莲花清瘟 · 剧情式植入</h3></div>
+<div class="ven">Story-driven Product Placement</div>
+<p>宿舍里的一场「感冒」小剧情——把产品放进故事里，而不是放进广告位。</p>
+<ul class="roles"><li>脚本</li><li>拍摄</li><li>剪辑</li></ul>
+<details class="case"><summary>复盘笔记</summary>
+<dl>
+<dt>任务</dt><dd>药品类产品不能硬广，得让人愿意把剧情看完，再接受产品出场。</dd>
+<dt>做法</dt><dd>用时间戳（12:25 → 9:30）做叙事锚点，先演「难受」的日常细节：量体温、躺不住、说话没力气；再让人物自己去翻药。全片保持宿舍自然光，尽量不像广告。</dd>
+<dt>复盘</dt><dd>铺垫偏长，产品出现得晚。短视频里更稳的做法是 15 秒内先给冲突，再给解法；下次会把「难受」的第一个镜头提前到开场三秒。</dd>
+</dl>
+</details>
+</div>
+</article>
+<article class="vcard rv">
+<div class="media landscape">
+<img src="/assets/media/poster-haoshi.jpg" alt="豪士面包品牌短片里人物手持产品的画面" width="1280" height="720" loading="lazy">
+<button class="play" type="button" aria-label="播放：豪士面包 · 多场景品牌短片"><i aria-hidden="true"></i></button>
+<video preload="none" playsinline controls src="/assets/media/haoshi.mp4" poster="/assets/media/poster-haoshi.jpg"></video>
+</div>
+<div class="vmeta">
+<div class="vtitle"><span class="idx">04</span><h3>豪士面包 · 多场景品牌短片</h3></div>
+<div class="ven">Brand Film · Multi-scene</div>
+<p>宿舍、教室、球场、办公室四场景快切，把「高蛋白低热量」讲成年轻人的日常。</p>
+<ul class="roles"><li>策划</li><li>出镜</li><li>剪辑</li></ul>
+<details class="case"><summary>复盘笔记</summary>
+<dl>
+<dt>任务</dt><dd>品牌要露出四个卖点（高蛋白质、低热量、松软、配料干净），但不能像在念参数。</dd>
+<dt>做法</dt><dd>四个生活场景各演一个小冲突：上课犯困、打球饿了、宿舍嘴馋；卖点全部落在人物台词和花字上；综艺式花字（Mr.豪豪先生 / AAA豪式面包）拉年轻感，结尾统一品牌 LOGO。</dd>
+<dt>复盘</dt><dd>场景多导致每条都太短，人物记忆点被摊薄。如果只留两个场景演透，情绪会更完整。</dd>
+</dl>
+</details>
+</div>
+</article>
+</div>
+</div>
+<div class="poster-grid">
+<div class="pcard rv">
+<div class="frame"><img src="/assets/media/poster-fuji.jpg" alt="富士山主题海报：阵雨雾浓" width="900" height="1200" loading="lazy"></div>
+<div class="cap"><h3>Mount Fuji · 阵雨雾浓</h3><span class="yr">2025.09</span></div>
+</div>
+<div class="pcard rv">
+<div class="frame"><img src="/assets/media/poster-sisyphus.jpg" alt="西西弗神话书籍封面设计" width="900" height="1200" loading="lazy"></div>
+<div class="cap"><h3>西西弗神话 · 尤里卡文库</h3><span class="yr">Book Cover</span></div>
+</div>
+<div class="pcard rv">
+<div class="frame"><img src="/assets/media/poster-withered.jpg" alt="枯木不逢春展览海报设计" width="900" height="1200" loading="lazy"></div>
+<div class="cap"><h3>枯木不逢春 · 展览视觉</h3><span class="yr">2025.08</span></div>
+</div>
+</div>
+</div>
+</section>
+<section class="live" id="live">
+<div class="wrap">
+<div class="sec-head rv"><span class="num">03</span><h2>直播实战</h2><span class="en">Live Commerce</span></div>
+<div class="live-grid">
+<div class="rv">
+<div class="score"><span class="label">直播脚本 · FABE 综合评分</span><div class="big">86.48<small>/ 100</small></div></div>
+<div class="score-row">
+<div><b>94</b><span>教师评分 · 60%</span></div>
+<div><b>75.2</b><span>生生互评 · 40%</span></div>
+<div><b>4</b><span>FABE 四段结构</span></div>
+</div>
+<blockquote class="quote">「非常非常好，我给你一个『夯』！故事和整个产品契合得非常好。」<span class="by">—— 课程教师评分意见</span></blockquote>
+<p class="quote quote-note">分数之外，我在宠物食品品牌的直播间做过场控：盯流程、接弹幕、控节奏，处理用户反馈。脚本写得对，直播才接得住。</p>
+</div>
+<aside class="rubric rv">
+<div class="rubric-head"><span>教师评分 94 的分项构成</span><span>得分 / 10</span></div>
+<ul>
+<li><span>痛点开场</span><b>10</b><span class="bar"><i style="width:100%"></i></span></li>
+<li><span>产品说人话</span><b>10</b><span class="bar"><i style="width:100%"></i></span></li>
+<li><span>场景代入</span><b>10</b><span class="bar"><i style="width:100%"></i></span></li>
+<li><span>促单收尾</span><b>9</b><span class="bar"><i style="width:90%"></i></span></li>
+<li><span>特征 F</span><b>10</b><span class="bar"><i style="width:100%"></i></span></li>
+<li><span>优势 A</span><b>8</b><span class="bar"><i style="width:80%"></i></span></li>
+<li><span>利益 B</span><b>9</b><span class="bar"><i style="width:90%"></i></span></li>
+<li><span>证据 E</span><b>8</b><span class="bar"><i style="width:80%"></i></span></li>
+<li><span>直播感</span><b>10</b><span class="bar"><i style="width:100%"></i></span></li>
+<li><span>时间控制</span><b>10</b><span class="bar"><i style="width:100%"></i></span></li>
+</ul>
+<a class="rubric-link" href="/assets/media/live-score.png" target="_blank" rel="noopener">查看原始评分表 ↗</a>
+</aside>
+</div>
+</div>
+</section>
+<section class="sec" id="skills">
+<div class="wrap">
+<div class="sec-head rv"><span class="num">04</span><h2>能力</h2><span class="en">Two Tracks</span></div>
+<div class="skill-grid">
+<div class="skill-col rv">
+<h3>内容生产<span class="en">Content</span></h3>
+<ul class="skills">
+<li><span>短视频策划 / 分镜脚本</span><span class="lv">熟练</span></li>
+<li><span>拍摄：手机 · 单反 · 稳定器</span><span class="lv">熟练</span></li>
+<li><span>剪辑：剪映 · 调色 · 字幕 · 包装</span><span class="lv">熟练</span></li>
+<li><span>文案撰写 · 活动稿件 · 选题</span><span class="lv">熟练</span></li>
+<li><span>平面排版：海报 · 封面 · 长图</span><span class="lv">可独立</span></li>
+<li><span>AI 提效：脚本发散 · 字幕识别 · 粗剪 · 调研</span><span class="lv">日常</span></li>
+</ul>
+</div>
+<div class="skill-col rv">
+<h3>直播与社区<span class="en">Live &amp; Community</span></h3>
+<ul class="skills">
+<li><span>直播脚本 · FABE 结构</span><span class="lv">熟练</span></li>
+<li><span>场控 · 弹幕互动 · 节奏把控</span><span class="lv">有实操</span></li>
+<li><span>电商直播</span><span class="lv">中级证书</span></li>
+<li><span>数据采集与复盘习惯</span><span class="lv">日常</span></li>
+<li><span>游戏圈层语态 · 梗文化</span><span class="lv">深度玩家</span></li>
+<li><span>玩家反馈收集与话题策划</span><span class="lv">可承接</span></li>
+</ul>
+</div>
+</div>
+<div class="tags rv tags-tools"><span>剪映</span><span>稳定器</span><span>Office · PPT</span><span>素材修图</span><span>AI 工具（文本 / 生图 / 生视频）</span><span>直播中控台</span><span>活动执行</span></div>
+</div>
+</section>
+<section class="sec" id="exp">
+<div class="wrap">
+<div class="sec-head rv"><span class="num">05</span><h2>经历</h2><span class="en">Trajectory</span></div>
+<div class="tl rv">
+<div class="yr">2024.09—2027.06</div>
+<div class="dot" aria-hidden="true"></div>
+<div class="body"><h3>深圳职业技术大学 · 传播与策划</h3><div class="org">Shenzhen Polytechnic University — Communication &amp; Planning</div><p>主修视频拍摄与剪辑、新媒体策划、创意宣传、活动策划、影像创作；课余自主研究游戏社区生态与游戏新媒体传播逻辑。</p></div>
+</div>
+<div class="tl rv">
+<div class="yr">2024.08</div>
+<div class="dot" aria-hidden="true"></div>
+<div class="body"><h3>电商直播助理 · 宠物食品品牌</h3><div class="org">Live Commerce Assistant</div><p>场控、弹幕互动与氛围维护，整理物料并协助流程推进；熟悉宠物消费群体的互动关注点与用户反馈处理。</p></div>
+</div>
+<div class="tl rv">
+<div class="yr">2024.07</div>
+<div class="dot" aria-hidden="true"></div>
+<div class="body"><h3>五月天演唱会深圳站 · 现场执行</h3><div class="org">Mayday Concert — On-site Crew</div><p>人流引导、秩序维护与应急协同，在大流量线下场景里完成团队配合。</p></div>
+</div>
+<div class="tl rv">
+<div class="yr">2024.06</div>
+<div class="dot" aria-hidden="true"></div>
+<div class="body"><h3>深圳云里梦想乐园 · 安全运营协助</h3><div class="org">Theme Park — Operations Support</div><p>游客引导与现场巡查，练的是服务意识、沟通协调和风险预判。</p></div>
+</div>
+<div class="tl rv is-last">
+<div class="yr">2023.05</div>
+<div class="dot" aria-hidden="true"></div>
+<div class="body"><h3>路人王篮球赛事 · 数据整理助理</h3><div class="org">Lu Ren Wang — Data Assistant</div><p>赛事数据采集、核对与归纳整理，养成了记录和复盘的习惯——后来做内容复盘也是同一套动作。</p></div>
+</div>
+<div class="projects">
+<div class="label">项目 · Selected Projects</div>
+<div class="project-grid">
+<div class="pj rv"><span class="role">主创 / 拍摄</span><h3>校园宣传创意视频</h3><p>独立完成策划、脚本分镜、实地拍摄与后期剪辑；用 AI 辅助脚本发散、字幕识别与素材粗剪，把时间留给镜头表达。</p></div>
+<div class="pj rv"><span class="role">策划</span><h3>大学生脱口秀节目策划</h3><p>问卷调研、用户分析、选题规划与脚本撰写；用 AI 归类反馈，快速提炼年轻群体的喜好和网络语境。</p></div>
+<div class="pj rv"><span class="role">视觉 / 排版</span><h3>跨境电商视觉优化</h3><p>多语言海报修改与素材排版优化，处理图文包装与内容本地化，AI 辅助多语言文案初稿。</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="wrap">
+<span class="label">CONTACT · 联系</span>
+<h2>聊聊？<br><em>Let’s talk.</em></h2>
+<p class="contact-line">我现在在深圳，2027 年 6 月毕业，正在找新媒体运营、短视频、直播相关的实习与正职。看完作品想聊细节、想看完整脚本或更多素材，随时找我。</p>
+<div class="ways">
+<a class="way" href="mailto:2292563436@qq.com"><small>EMAIL</small>2292563436@qq.com</a>
+<button class="way" type="button" data-copy="zhangqirui13579" data-copy-tip="微信号已复制：zhangqirui13579"><small>WECHAT</small>zhangqirui13579</button>
+<a class="way" href="tel:13265532026"><small>TEL</small>132 6553 2026</a>
+</div>
+<div class="foot">
+<span>© 2026 张琦瑞 · 深圳</span>
+<span>本页由 <a href="https://github.com/devlive-community/pageforge" target="_blank" rel="noopener">PageForge</a> 构建 · 部署于 GitHub Pages</span>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+    </div>
+</article>
+                </article>
+            </main>
+
+            <!-- 右侧目录 -->
+            
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- 返回顶部按钮 -->
+
+
+<!-- 遮罩层 -->
+
+</body>
+
+<!-- 基础脚本文件 -->
+<script src="/assets/pageforge.min.js"></script>
+
+<script>
+    // 移动端侧边栏打开时显示遮罩
+    document.querySelector('[onclick*="sidebar-menu"]').addEventListener('click', function () {
+        document.getElementById('sidebar-overlay').classList.remove('hidden');
+    });
+</script>
+
+<!-- 加载主题配置中的额外 JS 文件 -->
+
+    
+        <script src="/assets/js/site.js"></script>
+    
+
+
+<!-- 是否启用 Lucide 图标库 -->
+
+</html>

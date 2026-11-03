@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html lang="zh" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面没找到 - 张琦瑞</title>
+    <!-- 基础 SEO meta 标签 -->
+<meta name="description" content="这个地址不存在，回首页看看作品吧。">
+<meta name="keywords" content="张琦瑞,新媒体运营,短视频策划,短视频剪辑,直播运营,直播场控,内容运营,游戏社区,作品集,深圳,深圳职业技术大学">
+<meta name="author" content="张琦瑞">
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
+
+    <!-- 基础样式文件 -->
+    <link rel="stylesheet" href="/assets/pageforge.min.css">
+
+    <script>
+        (function () {
+            document.addEventListener('click', function (e) {
+                var link = e.target.closest('a');
+                if (!link) {
+                    return;
+                }
+
+                const href = link.getAttribute('href');
+                if (!href || href.startsWith('http') || href.startsWith('#')) {
+                    return;
+                }
+
+                e.preventDefault();
+
+                // 获取当前路径信息
+                const pathParts = window.location.pathname.split('/').filter(Boolean);
+                let version = null;
+                let lang = null;
+
+                // 解析当前 URL 中的版本和语言信息
+                if (pathParts.length > 0) {
+                    if (/^\d+\.\d+(\.\d+)?$/.test(pathParts[0]) || pathParts[0] === 'current') {
+                        version = pathParts[0];
+                        lang = pathParts[1];
+                    }
+                    else {
+                        lang = pathParts[0];
+                    }
+                }
+
+                // 构建 404 页面路径
+                let notFoundPath = '';
+                if (version) {
+                    notFoundPath += '/' + version;
+                }
+                if (lang) {
+                    notFoundPath += '/' + lang;
+                }
+                notFoundPath += '/404.html';
+
+                fetch(href)
+                    .then(response => {
+                        if (response.ok) {
+                            window.location.href = href;
+                        }
+                        else {
+                            window.location.href = notFoundPath;
+                        }
+                    })
+                    .catch(() => {
+                        window.location.href = notFoundPath;
+                    });
+            });
+        })();
+    </script>
+
+    <!-- 加载主题配置中的额外 CSS 文件 -->
+    
+        
+            <link rel="stylesheet" href="/assets/css/theme.css">
+        
+    
+
+    <style>
+        :root {
+            
+            --header-height: 64px; /* nav 64px */
+            
+        }
+    </style>
+
+    <!-- Tailwind CSS -->
+    <script src="/assets/js/tailwind-off.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                h1: { fontWeight: '700', fontSize: '1.875rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h2: { fontWeight: '700', fontSize: '1.5rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h3: { fontWeight: '700', fontSize: '1.25rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h4: { fontWeight: '700', fontSize: '1.125rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h5: { fontWeight: '700', fontSize: '1rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                                h6: { fontWeight: '700', fontSize: '0.875rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                            }
+                        }
+                    }
+                }
+            },
+            plugins: [
+                function({ addBase }) {
+                    addBase({
+                        'h1': { fontWeight: '700', fontSize: '1.875rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h2': { fontWeight: '700', fontSize: '1.5rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h3': { fontWeight: '700', fontSize: '1.25rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h4': { fontWeight: '700', fontSize: '1.125rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h5': { fontWeight: '700', fontSize: '1rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        'h6': { fontWeight: '700', fontSize: '0.875rem', marginTop: '0.75rem', marginBottom: '0.75rem', color: 'rgb(17, 24, 39)' },
+                        '.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6': { color: 'rgb(255, 255, 255)' }
+                    })
+                }
+            ]
+        }
+    </script>
+
+    <!-- Prism.js 语法高亮样式 -->
+    <link href="/assets/css/third-party-off.css" rel="stylesheet"/>
+
+    <!-- 统计代码 -->
+    
+
+    <!-- Mermaid 图表 -->
+    
+
+    <!-- KaTeX 数学公式 -->
+    
+</head>
+
+<body class="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+<div class="flex flex-col min-h-screen">
+    
+
+    <!-- 移动端菜单按钮 -->
+    
+
+    <div class="pt-[--header-height] w-full">
+        <div class="container mx-auto px-4 py-4 md:py-8 flex-grow flex flex-col md:flex-row">
+            <!-- 左侧列表 -->
+            
+
+            <!-- 中间内容 -->
+            <main class="flex-grow w-full md:w-2">
+                <article class="prose dark:prose-invert lg:prose-lg mx-auto
+                          max-w-none md:max-w-2xl lg:max-w-full">
+                    <article>
+    <div class="content">
+        <div class="e404">
+<div class="e404-inner">
+<div class="e404-mark">张琦瑞 · PORTFOLIO</div>
+<div class="e404-code">40<em>4</em></div>
+<h1>这一页没找到</h1>
+<p>链接可能过期了，或者是我写错了地址。<br>回首页看作品，或者直接联系我。</p>
+<div class="e404-links">
+<a class="way" href="/">回到首页</a>
+<a class="way" href="mailto:2292563436@qq.com">写邮件给我</a>
+</div>
+</div>
+</div>
+
+    </div>
+</article>
+                </article>
+            </main>
+
+            <!-- 右侧目录 -->
+            
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- 返回顶部按钮 -->
+
+
+<!-- 遮罩层 -->
+
+</body>
+
+<!-- 基础脚本文件 -->
+<script src="/assets/pageforge.min.js"></script>
+
+<script>
+    // 移动端侧边栏打开时显示遮罩
+    document.querySelector('[onclick*="sidebar-menu"]').addEventListener('click', function () {
+        document.getElementById('sidebar-overlay').classList.remove('hidden');
+    });
+</script>
+
+<!-- 加载主题配置中的额外 JS 文件 -->
+
+    
+        <script src="/assets/js/site.js"></script>
+    
+
+
+<!-- 是否启用 Lucide 图标库 -->
+
+</html>
